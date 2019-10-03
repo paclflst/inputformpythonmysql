@@ -1,0 +1,246 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Python Flask Bucket List App</title>
+
+
+    <link rel="stylesheet" type="text/css" href="/static/content/bootstrap.min.css" />
+
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+    <link href="/static/content/edititem.css" rel="stylesheet">
+    <script src="/static/scripts/jquery-1.10.2.js"></script>
+    <script src="/static/scripts/edititem.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="jumbotron">
+            <h2>Insert Image Metadata</h2>
+
+            <form class="form-signin">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-2"><label for="inputPostTitle">Post Title</label></div>
+                        <div class="col-sm-10"><input type="name" name="inputPostTitle" id="inputPostTitle" class="form-control" placeholder="Post Title" required autofocus /></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2"><label for="inputBarcode">Barcode</label></div>
+                        <div class="col-sm-10"><input type="barcode" name="inputBarcode" id="inputBarcode" class="form-control" placeholder="Barcode"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2"><label for="inputContainerLabel">Container Label</label></div>
+                        <div class="col-sm-10"><input type="name" name="inputContainerLabel" id="inputContainerLabel" class="form-control" placeholder="Container Label" /></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2"><label for="inputBarcode">Barcode</label></div>
+                        <div class="col-sm-10"><input type="barcode" name="inputBarcode" id="inputBarcode" class="form-control" placeholder="Barcode"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <label for="inputStorageUnit">Storage Unit</label>
+                        </div>
+                        <div class="col-sm-10">
+                            <input name="inputStorageUnit" id="inputStorageUnit" class="form-control" placeholder="Storage Unit">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <label for="inputShootDate">Shoot Date</label>
+                        </div>
+                        <div class="col-sm-10">
+                            <input name="inputShootDate" id="inputShootDate" class="form-control" placeholder="Shoot Date">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <label for="inputPublicationDate">Publication Date</label>
+                        </div>
+                        <div class="col-sm-10">
+                            <input name="inputPublicationDate" id="inputPublicationDate" class="form-control" placeholder="Publication Date">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <label for="inputUnitCode">Unit Code</label>
+                        </div>
+                        <div class="col-sm-10">
+                            <input name="inputUnitCode" id="inputUnitCode" class="form-control" placeholder="Unit Code">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <label for="inputCompletedBy">Completed by</label>
+                        </div>
+                        <div class="col-sm-10">
+                            <input name="inputCompletedBy" id="inputCompletedBy" class="form-control" placeholder="Completed by">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <label for="inputResearch">Research</label>
+                        </div>
+                        <div class="col-sm-10">
+                            <input name="inputResearch" id="inputResearcht" class="form-control" placeholder="Research">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <label for="inputPhotographer">Photographer</label>
+                        </div>
+                        <div class="col-sm-10">
+                            <input name="inputPhotographer" id="inputPhotographer" class="form-control" placeholder="Photographer">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <label for="inputPublication">Publication</label>
+                        </div>
+                        <div class="col-sm-10">
+                            <input name="inputPublication" id="inputPublication" class="form-control" placeholder="Publication">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <label for="inputSeason">Season</label>
+                        </div>
+                        <div class="col-sm-10">
+                            <input name="inputSeason" id="inputSeason" class="form-control" placeholder="Season">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <label for="inputDesigner">Designer</label>
+                        </div>
+                        <div class="col-sm-10">
+                            <input name="inputDesigner" id="inputDesigner" class="form-control" placeholder="Designer">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <label for="inputCategory">Category</label>
+                        </div>
+                        <div class="col-sm-10">
+                            <input name="inputCategory" id="inputCategory" class="form-control" placeholder="Category">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <label for="inputFormat">Format</label>
+                        </div>
+                        <div class="col-sm-10">
+                            <input name="inputFormat" id="inputFormat" class="form-control" placeholder="Format">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <label for="inputColor">Color</label>
+                        </div>
+                        <div class="col-sm-10">
+                            <input name="inputColor" id="inputColor" class="form-control" placeholder="Color">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <label for="inputRights">Rights</label>
+                        </div>
+                        <div class="col-sm-10">
+                            <input name="inputRights" id="inputRights" class="form-control" placeholder="Rights">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <label for="inputLocation">Location</label>
+                        </div>
+                        <div class="col-sm-10">
+                            <input name="inputLocation" id="inputLocation" class="form-control" placeholder="Location">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <label for="inputPictured">Pictured</label>
+                        </div>
+                        <div class="col-sm-10">
+                            <input name="inputPictured" id="inputPictured" class="form-control" placeholder="Pictured">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <label for="inputDescription">Description</label>
+                        </div>
+                        <div class="col-sm-10">
+                            <input name="inputDescription" id="inputDescription" class="form-control" placeholder="Description">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <label for="inputNotes">Notes</label>
+                        </div>
+                        <div class="col-sm-10">
+                            <input name="inputNotes" id="inputNotes" class="form-control" placeholder="Notes">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <label for="inputOldBarcode">Old Barcode</label>
+                        </div>
+                        <div class="col-sm-10">
+                            <input name="inputOldBarcode" id="inputOldBarcode" class="form-control" placeholder="Old Barcode">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <label for="inputQuantity">Quantity</label>
+                        </div>
+                        <div class="col-sm-10">
+                            <input name="inputQuantity" id="inputPublication" class="form-control" placeholder="Quantity">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <label for="inputUUID">UUID</label>
+                        </div>
+                        <div class="col-sm-10">
+                            <input name="inputUUID" id="inputPublication" class="form-control" placeholder="UUID">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <label for="inputStatus">Status</label>
+                        </div>
+                        <div class="col-sm-10">
+                            <input name="inputStatus" id="inputStatus" class="form-control" placeholder="Status">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <label for="inputCondition">Condition</label>
+                        </div>
+                        <div class="col-sm-10">
+                            <input name="inputCondition" id="inputCondition" class="form-control" placeholder="Condition">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <label for="inputFavorite">Favorite</label>
+                        </div>
+                        <div class="col-sm-10">
+                            <input name="inputFavorite" id="inputFavorite" class="form-control" placeholder="Favorite">
+                        </div>
+                    </div>
+                    <button id="btnSignUp" class="btn btn-lg btn-primary btn-block" type="button">Submit</button>
+                    <p hidden id="messageSuccess">Success</p>
+                </div>
+            </form>
+        </div>
+
+
+
+        <footer class="footer">
+           
+        </footer>
+
+    </div>
+</body>
+</html>
